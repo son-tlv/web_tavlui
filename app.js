@@ -235,7 +235,6 @@ function handleLogin(e) {
 
   const username = document.getElementById("username").value.trim();
   const password = document.getElementById("password").value;
-  const rememberMe = document.getElementById("rememberMe").checked;
 
   let isValid = true;
 
@@ -259,7 +258,7 @@ function handleLogin(e) {
     document.getElementById("loginStatus").innerHTML = `
               <div class="alert alert-success" role="alert">
                   <i class="fas fa-check-circle"></i> Welcome back, ${username}! 
-                  ${rememberMe ? "Your session will be remembered." : ""}
+                  
               </div>`;
 
     loginForm.reset();
